@@ -1,16 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System.Net.Http;
 using tulsa_dnug_website.infrastructure.Services;
-using tulsa_dnug_website.Services;
 
 namespace tulsa_dnug_website
 {
@@ -31,7 +24,6 @@ namespace tulsa_dnug_website
             services.AddSingleton<MeetupService>();
             services.AddSingleton<StaticDataService>();
             services.AddSingleton<MeetingInfoService>();
-            services.AddSingleton<WeatherForecastService>();
             services.AddSingleton<WebsiteDataService>();
             services.AddSingleton<SponsorInfoService>();
         }
